@@ -16,15 +16,15 @@
 
 package org.springframework.boot.env;
 
+import org.springframework.core.env.PropertySource;
+import org.springframework.core.io.Resource;
+import org.springframework.util.ClassUtils;
+
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Map;
-
-import org.springframework.core.env.PropertySource;
-import org.springframework.core.io.Resource;
-import org.springframework.util.ClassUtils;
 
 /**
  * Strategy to load '.yml' (or '.yaml') files into a {@link PropertySource}.

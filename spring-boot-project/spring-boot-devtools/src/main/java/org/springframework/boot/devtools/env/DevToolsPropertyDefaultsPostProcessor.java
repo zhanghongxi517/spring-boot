@@ -16,12 +16,7 @@
 
 package org.springframework.boot.devtools.env;
 
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.Map;
-
 import org.apache.commons.logging.Log;
-
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.context.properties.bind.BindResult;
 import org.springframework.boot.context.properties.bind.Binder;
@@ -36,6 +31,10 @@ import org.springframework.core.env.Environment;
 import org.springframework.core.env.MapPropertySource;
 import org.springframework.core.log.LogMessage;
 import org.springframework.util.ClassUtils;
+
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * {@link EnvironmentPostProcessor} to add properties that make sense when working at

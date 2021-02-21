@@ -16,6 +16,15 @@
 
 package org.springframework.boot.loader.archive;
 
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.io.TempDir;
+import org.springframework.boot.loader.TestJarCreator;
+import org.springframework.boot.loader.archive.Archive.Entry;
+import org.springframework.util.FileCopyUtils;
+import org.springframework.util.StringUtils;
+
 import java.io.File;
 import java.io.FileOutputStream;
 import java.net.URL;
@@ -26,16 +35,6 @@ import java.util.Map;
 import java.util.UUID;
 import java.util.jar.JarEntry;
 import java.util.jar.JarFile;
-
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.io.TempDir;
-
-import org.springframework.boot.loader.TestJarCreator;
-import org.springframework.boot.loader.archive.Archive.Entry;
-import org.springframework.util.FileCopyUtils;
-import org.springframework.util.StringUtils;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

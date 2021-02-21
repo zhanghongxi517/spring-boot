@@ -16,19 +16,15 @@
 
 package org.springframework.boot.loader.archive;
 
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
+import org.springframework.boot.loader.jar.JarFile;
+
+import java.io.*;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.Iterator;
 import java.util.UUID;
 import java.util.jar.JarEntry;
 import java.util.jar.Manifest;
-
-import org.springframework.boot.loader.jar.JarFile;
 
 /**
  * {@link Archive} implementation backed by a {@link JarFile}.

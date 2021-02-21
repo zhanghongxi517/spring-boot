@@ -16,13 +16,13 @@
 
 package org.springframework.boot.autoconfigure.web.servlet;
 
-import java.io.File;
-import java.security.AccessControlException;
-
 import org.springframework.boot.autoconfigure.template.TemplateAvailabilityProvider;
 import org.springframework.core.env.Environment;
 import org.springframework.core.io.ResourceLoader;
 import org.springframework.util.ClassUtils;
+
+import java.io.File;
+import java.security.AccessControlException;
 
 /**
  * {@link TemplateAvailabilityProvider} that provides availability information for JSP
